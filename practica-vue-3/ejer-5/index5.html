@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio numero 1</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul v-for="(arrayCiuda, key, index) in arrayCiudad">
+        <li>{{index}} {{key}} {{arrayCiuda.ciudad}}</li>
+      </ul>
+      <ul v-for="(arrayDepartament, key, index) in arrayDepartamento">
+        <li>{{index}} {{key}} {{arrayDepartament.departamento}}</li>
+      </ul>
+      <ul v-for="(arrayCodig, key, index) in arrayCodigo">
+        <li>{{index}} {{key}} {{arrayCodig.codigo}}</li>
+      </ul>
+      <ul v-for="(arrayMusic, key, index) in arrayMusica">
+        <li>{{index}} {{key}} {{arrayMusic.musica}}</li>
+      </ul>
+    </div>
+  </body>
+  <script src="app/app5.js"></script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>imagen 1</p>
+      <input type="text" placeholder="ingrese la url de la img 1" v-model="img_1"/>
+      <p>imagen 2</p>
+      <input type="text" placeholder="ingrese la url de la img 2" v-model="img_2"/>
+      <p>imagen 3</p>
+      <input type="text" placeholder="ingrese la url de la img 3" v-model="img_3"/>
+
+      <img :src="img_1" alt="" width="200"/>
+      <img :src="img_2"  alt="" width="200"/>
+      <img :src="img_3" alt="" width="200"/>
+    </div>
+  </body>
+  <script src="app/app1.js"></script>
+</html>

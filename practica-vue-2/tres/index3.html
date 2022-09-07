@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h3>Numero 1</h3>
+      <input type="number" placeholder="ingrese num2" v-model="num1" />
+      <h3>Numero 2</h3>
+      <input type="number" placeholder="ingrese num3" v-model="num3" />
+      <h3>Numero 3</h3>
+      <input type="number" placeholder="ingrese num1" v-model="num2" />
+
+      <h1>
+        {{Math.max(num1, num2, num3)}}, {{num1 + num2 + num3 -Math.min(num1,
+        num2, num3) -Math.max(num1, num2, num3)}}, {{Math.min(num1, num2,
+        num3)}}
+      </h1>
+    </div>
+  </body>
+  <script src="app3.js"></script>
+</html>

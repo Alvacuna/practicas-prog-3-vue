@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio numero 1</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h3>Array de numeros</h3>
+      <ul v-for="arrayNumber in arrayNumbers">
+        <li>{{arrayNumber}} es de tipo {{typeof(arrayNumber)}}</li>
+      </ul>
+      <h3>Array de booleanos</h3>
+      <ul v-for="arrayBoolean in arrayBooleans">
+        <li>{{arrayBoolean}} es de tipo {{typeof(arrayBoolean)}}</li>
+      </ul>
+      <h3>Array de cadenas de texto</h3>
+      <ul v-for="arrayString in arrayStrings">
+        <li>{{arrayString}} es de tipo {{typeof(arrayString)}}</li>
+      </ul>
+    </div>
+  </body>
+  <script src="app/app2.js"></script>
+</html>

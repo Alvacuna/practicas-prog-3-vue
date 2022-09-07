@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio numero 1</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+        <form v-on:submit="saveAlumns">
+            <input type="text" placeholder="ingrese nombre del alumno" v-model="name">
+            <input type="number" placeholder="ingrese la nota del alumno" v-model="number">
+            <button>Save Alumno</button>
+        </form>
+      <ul v-for="alumnObject in alumnObjects">
+        <template v-if="alumnObject.notas>60">
+            <li>
+                {{alumnObject.alumnos}} {{alumnObject.notas}}
+            </li>
+        </template>
+      </ul>
+    </div>
+  </body>
+  <script src="app/app6.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio numero 1</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>lista de objeto de estudiantes</p>
+      <ul v-for="arrayObjectsStudent in arrayObjectsStudents">
+        <li>{{arrayObjectsStudent.student}}</li>
+      </ul>
+      <p>lista de objeto de asignaturas</p>
+      <ul v-for="arrayObjectsSubject in arrayObjectsSubjects">
+        <li>{{arrayObjectsSubject.subjects}}</li>
+      </ul>
+      <p>lista de objeto de productos</p>
+      <ul v-for="arrayObjectsProduct in arrayObjectsProducts">
+        <li>{{arrayObjectsProduct.products}}</li>
+      </ul>
+    </div>
+  </body>
+  <script src="app/app3.js"></script>
+</html>
